@@ -1,0 +1,168 @@
+.meals {
+    max-width: 60rem;
+    width: 90%;
+    margin: 2rem auto;
+    animation: meals-appear 1s ease-out forwards;
+}
+
+.MealsLoading {
+    text-align: center;
+    color: white;
+}
+
+.MealsError {
+    text-align: center;
+    color: #ff6e3a;
+}
+
+.meals ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Work.js */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #003822;
+}
+
+.work {
+    width: 90%;
+    max-width: 43rem;
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: white;
+    margin: 3rem auto;
+    animation: meals-appear 1s ease-out forwards;
+}
+
+.form-control {
+    margin-bottom: 1rem;
+}
+
+.form-control input,
+.form-control label {
+    display: block;
+}
+
+.form-control label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.form-control input,
+.form-control select {
+    font: inherit;
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 20rem;
+    max-width: 100%;
+}
+
+.form-control input:focus {
+    outline: none;
+    border-color: #003822;
+    background-color: #D5F5E3;
+}
+
+.control-group {
+    display: flex;
+    column-gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.control-group .form-control {
+    min-width: 15rem;
+    flex: 1;
+}
+
+button {
+    font: inherit;
+    background-color: #003822;
+    color: white;
+    border: 1px solid #003822;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover,
+button:active {
+    background-color: #005800;
+    border-color: #005800;
+}
+
+button:disabled,
+button:disabled:hover,
+button:disabled:active {
+    background-color: #ccc;
+    color: #292929;
+    border-color: #ccc;
+    cursor: not-allowed;
+}
+
+.form-actions {
+    text-align: right;
+}
+
+.form-actions button {
+    margin-left: 1rem;
+}
+
+.invalid input {
+    border: 1px solid #b40e0e;
+    background-color: #fddddd;
+}
+
+.invalid input:focus {
+    border-color: #ff8800;
+    background-color: #fbe8d2;
+}
+
+.error-text {
+    color: #b40e0e;
+}
+
+/* Work.js */
+
+.info {
+    font-size: 1.30rem;
+    text-align: center;
+    max-width: 45rem;
+    width: 90%;
+    margin: auto;
+    margin-top: -6rem;
+    position: relative;
+    background-color: #E09F3E;
+    color: white;
+    border-radius: 14px;
+    padding: 1rem;
+    box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.25);
+}
+
+.info h2 {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+@keyframes meals-appear {
+    from {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
